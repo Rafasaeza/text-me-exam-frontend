@@ -1,0 +1,57 @@
+/* styles.css */
+  
+  /* Estilos para el formulario */
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Estilo para los inputs */
+  .input-text,
+  .input-file {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .input-file {
+    cursor: pointer;
+  }
+  
+  /* Estilo para el botón */
+  .add-button {
+    background-color: #4CAF50;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  /* Estilos para el mapa */
+  .map-wrapper {
+    height: 50vh;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Estilos Responsivos */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+    
+    .input-text,
+    .input-file,
+    .add-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

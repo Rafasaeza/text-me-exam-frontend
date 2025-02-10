@@ -1,0 +1,30 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
+    gap: 20px; /* Espacio entre elementos */
+    margin-top: 20px;
+  }
+  
+  /* Estilo para cada ítem de la cuadrícula */
+  .grid-item {
+    position: relative; /* Ajusta el contenido dentro del grid */
+  }
+  
+  /* Estilo para la imagen dentro de la cuadrícula */
+  .grid-image {
+    width: 100%; /* La imagen ocupa el 100% del ancho disponible del contenedor */
+    height: 200px; /* Tamaño más pequeño en pantallas pequeñas */
+    object-fit: cover; /* Mantiene la relación de aspecto sin distorsionar */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+  }
+  
+  /* Estilos Responsivos */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+  
+    .grid-image {
+      height: 150px; /* Ajuste de tamaño de la imagen para pantallas pequeñas */
+    }
+  }
