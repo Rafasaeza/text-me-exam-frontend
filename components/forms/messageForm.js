@@ -137,7 +137,7 @@ const MessageForm = ({ message, isReply = false, emailUser }) => {
         </div>
         
         <div className="mb-4">
-          <label className="block font-medium">Attachment (Optional)</label>
+          <label className="block font-medium">Attachment (Optional, la imagen puede que no cargue la primera vez, si falla repetir)</label>
           <input
             type="file"
             onChange={(e) => handleImageUpload(e.target.files[0])}
